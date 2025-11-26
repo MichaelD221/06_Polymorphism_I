@@ -30,24 +30,34 @@ public class App {
     }
 
      
-    // 2. Iteration überladene Methoden
-    private static void pollObject(Queen obj) {
+    // // 2. Iteration überladene Methoden
+    // private static void pollObject(Queen obj) {
+    //     output(obj.doYourJob());
+    //     output(obj.fly());
+    //     output("-------------------");
+    // }
+
+    // private static void pollObject(Worker obj) {
+    //     output(obj.doYourJob());
+    //     output(obj.fly());
+    //     output("-------------------");
+    // }
+
+    // private static void pollObject(Drone obj) {
+    //     output(obj.doYourJob());
+    //     output(obj.fly());
+    //     output("-------------------");
+    // }
+
+
+    // 3. Iteration Polymorphie
+    private static void pollObject(HoneyBee obj) {
         output(obj.doYourJob());
         output(obj.fly());
         output("-------------------");
     }
 
-    private static void pollObject(Worker obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-------------------");
-    }
 
-    private static void pollObject(Drone obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-------------------");
-    }
 
     private static void output(String outputStr) {
         System.out.println(outputStr);
