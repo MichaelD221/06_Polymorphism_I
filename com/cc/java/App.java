@@ -8,18 +8,45 @@ public class App {
         Worker worker = new Worker();
         Drone drone = new Drone();
 
-        output(queen.doYourJob());
-        output(queen.fly());
-        output("-------------------");
+        // 1. Iteration
 
-        output(worker.doYourJob());
-        output(worker.fly());
-        output("-------------------");
+        // output(queen.doYourJob());
+        // output(queen.fly());
+        // output("-------------------");
 
-        output(drone.doYourJob());
-        output(drone.fly());
-        output("-------------------");
+        // output(worker.doYourJob());
+        // output(worker.fly());
+        // output("-------------------");
 
+        // output(drone.doYourJob());
+        // output(drone.fly());
+        // output("-------------------");
+
+
+        pollObject(queen);
+        pollObject(worker);
+        pollObject(drone);
+
+    }
+
+     
+    // 2. Iteration überladene Methoden
+    private static void pollObject(Queen obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-------------------");
+    }
+
+    private static void pollObject(Worker obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-------------------");
+    }
+
+    private static void pollObject(Drone obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+        output("-------------------");
     }
 
     private static void output(String outputStr) {
